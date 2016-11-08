@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Experiencia 2 - Formulario</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-active">Formulario</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Formulario</h1>
+                    </div>
+					<form action="result.php" method="post">
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" name="nombvre" name="nombre" required="true">
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" name="apellido" required="true">
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="bday">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" name="bday" required="true">
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="gender">Género</label>
+                            <select class="form-control" name="gender">
+                              <option>Masculino</option>
+                              <option>Femenino</option>
+                              <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12 col-lg-12 col-sm-12">
+                            <label for="state">Región</label>
+                            <select class="form-control" name="state">
+                              <option>Arica y Parinacota</option>
+                              <option>Tarapacá</option>
+                              <option>Antofagasta</option>
+                              <option>Atacama</option>
+                              <option>Coquimbo</option>
+                              <option>Valparaíso</option>
+                              <option>Región Metropolitana</option>
+                              <option>Libertador General Bernardo O'Higgins</option>
+                              <option>Maule</option>
+                              <option>Bío Bío</option>
+                              <option>Araucanía</option>
+                              <option>Los Ríos</option>
+                              <option>Los Lagos</option>
+                              <option>Aisén del General Carlos Ibáñez del Campo</option>
+                              <option>Magallanes y Antártica Chilena</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="interes">Áreas de Interés</label>
+                            <select multiple class="form-control" name="interes">
+                              <option>Ciencia</option>
+                              <option>Deporte</option>
+                              <option>Pintura Rupestre</option>
+                              <option>Videos de gatos</option>
+                              <option>Memes malos</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="urlp">URL Personal</label>
+                            <input type="text" class="form-control" name="urlp">
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6 col-sm-6">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="form-group col-md-3 col-lg-3 col-sm-3">
+                            <label for="color">Color Favorito</label>
+                            <input type="color" class="form-control" name="color">
+                        </div>
+                        
+                        <div class="form-grup col-md-offset-9 col-lg-offset-9 col-sm-offset-9 col-md-3 col-lg-3 col-sm-3">
+                            <input type="submit" value="Enviar"/>
+                            <input type="reset" value="Limpiar"/>
+                        </div>
+					</form>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
